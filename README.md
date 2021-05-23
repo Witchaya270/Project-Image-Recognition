@@ -55,3 +55,6 @@ python learning_based_test_run.py
 
 วิธีเปลี่ยน Dataset<br />
 ![path_train](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/Image%20for%20README/04.jpg?raw=true) <br />
+
+เนื่องจากไฟล์ model มีขนาดใหญ่เกินไป รบกวนดาวน์โหลด <a href="https://drive.google.com/file/d/13z8WBP3UlfZV282edHnlWi0gY8UKauBo/view?usp=sharing">จากที่นี่</a>
+ไปใส่ไว้ในโฟลเดอร์ model
