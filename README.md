@@ -36,3 +36,15 @@ python handcraft_based.py
 ตัวอย่างชื่อไฟล์ Folder '1 test' ถ้าชื่อเปลี่ยนต้องเปลี่ยนด้วย ตามชื่อ Folder ที่กำหนดไว้ <br />
 ในบรรทัดที่ 71 คือ นามสกุลของไฟล์ เช่น .jpg, .gif, .png เป็นต้น ซึ่งเปลี่ยนได้ตามนามสกุลไฟล์ที่ต้องการ <br />
 
+## Project 3
+### วิธี Run Code Train
+```
+python learning_based_train_run.py
+```
+เมื่อรันเสร็จจะได้ train_learning_based.pt ออกมา ซึ่งก็คือแบบจำลอง
+
+### วิธี Run Code Test
+```
+python learning_based_test_run.py
+```
+เมื่อรันเสร็จจะแสดงผลลัพธ์ของการทำนายว่าตรงกับข้อมูลชุดทดสอบหรือไม่ แล้วแสดงผลของการทำนายออกมา
