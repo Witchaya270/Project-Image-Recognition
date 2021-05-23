@@ -6,7 +6,7 @@
   3.Naspas <br>
   4.
   
-## Project 2
+## Project 2 : Handcraft_base 
 ### วิธี Run Code
 ```
 python handcraft_based.py
