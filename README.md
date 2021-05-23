@@ -45,7 +45,7 @@ python learning_based_train_run.py
 
 
 วิธีเปลี่ยน Dataset
-![path_train](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/Image%20for%20README/03.png?raw=true) <br />
+![path_train](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/Image%20for%20README/03.jpg?raw=true) <br />
 
 ### วิธี Run Code Test
 ```
@@ -54,4 +54,4 @@ python learning_based_test_run.py
 เมื่อรันเสร็จจะแสดงผลลัพธ์ของการทำนายว่าตรงกับข้อมูลชุดทดสอบหรือไม่ แล้วแสดงผลของการทำนายออกมา
 
 วิธีเปลี่ยน Dataset
-![path_train](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/Image%20for%20README/04.png?raw=true) <br />
+![path_train](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/Image%20for%20README/04.jpg?raw=true) <br />
