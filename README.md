@@ -31,7 +31,7 @@ python handcraft_based.py
 ในบรรทัดที่ 21 คือ นามสกุลของไฟล์ เช่น .jpg, .gif, .png เป็นต้น ซึ่งเปลี่ยนได้ตามนามสกุลไฟล์ที่ต้องการ <br />
 
 สำหรับ Test <br />
-![path_test](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/image_foreREADME/%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20path_test.png?raw=true) <br />
+![path_test](https://github.com/Witchaya270/Project-Image-Recognition/blob/main/image_for%20README/%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20path_test.png?raw=true) <br />
 ให้เปลี่ยนค่าที่ path_test ในบรรทัดที่ 69 และสามารถเปลี่ยนชื่อไฟล์ได้ ดังตัวอย่างนี้ <br />
 ตัวอย่างชื่อไฟล์ Folder '1 test' ถ้าชื่อเปลี่ยนต้องเปลี่ยนด้วย ตามชื่อ Folder ที่กำหนดไว้ <br />
 ในบรรทัดที่ 71 คือ นามสกุลของไฟล์ เช่น .jpg, .gif, .png เป็นต้น ซึ่งเปลี่ยนได้ตามนามสกุลไฟล์ที่ต้องการ <br />
