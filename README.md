@@ -6,7 +6,7 @@
   <br>3.นาย ณัฐภาส คำผุด 62070243<br />
   <br>4.นางสาว วิชญา  ฉิมสา 62070270<br />
   
-## Project 2
+## Project 2 : Handcraft_base
 ### วิธี Run Code &#128187;	
 ```
 python handcraft_based.py
