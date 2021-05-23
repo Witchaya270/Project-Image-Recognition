@@ -8,7 +8,7 @@ from learning_based_cnn_param_loader.parameters import MODEL_NAME, N_EPOCHS, BAT
 
 root = os.path.dirname(__file__)
 
-# Instantiating the notMNIST dataset class we created
+# Path สำหรับโฟลเดอร์ dataset สำหรับ train
 train_dataset = notMNIST('Dataset/train')
 print("Loaded data")
 
