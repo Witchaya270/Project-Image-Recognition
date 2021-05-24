@@ -1,7 +1,7 @@
 # import library ต่าง ๆ 
 import cv2
 import numpy as np
-import tqdm as t
+#import tqdm as t
 import sklearn.neighbors as sn
 import skimage.feature as skf
 import matplotlib.pyplot as plt
@@ -66,11 +66,18 @@ Ytest = []
 # เรียกและเข้าถึงรูปภาพจาก Folder ทั้งหมด 10 Folder ของรูปภาพที่จะใช้ในการ Testing
 for i in range(10):
 	# เปลี่ยน directory ของ path_test
-	path_test = 'D:/Image/Test/' + str(i+1) + ' test';  # ตัวอย่างชื่อไฟล์ Folder '1 test' ถ้าชื่อเปลี่ยนต้องเปลี่ยนด้วย ตามชื่อ Folder ที่กำหนดไว้
+	path_test = 'D:/Image/การรู้จำภาพลายข้อนิ้วคน/' + str(i+1) + '_left index';  # ตัวอย่างชื่อไฟล์ Folder '1 test' ถ้าชื่อเปลี่ยนต้องเปลี่ยนด้วย ตามชื่อ Folder ที่กำหนดไว้
 	for fn in os.listdir(path_test):
 		if fn.endswith('jpg'):
-			img = plt.imread(os.path.join(path_test, fn), cv2.COLOR_BGR2GRAY)  # ให้แปลงรูปภาพเป็นภาพสีเทา
+			img = plt.imread(os.path.join(path_test, fn)) 
 
+			# ให้แปลงรูปภาพเป็นภาพสีเทา
+			if len(img.shape) == 3:
+				img = img[:,:,0]
+
+			#print(img)
+
+			#print(img.shape)
 			Xtest.append(img)
 			Ytest.append(i)
 
@@ -82,10 +89,11 @@ print(Ytest)  # แสดงการแบ่งกลุ่มข้อมู�
 
 
 check = []  # กำหนดไว้ เพื่อคำนวณ Percent ความถูกต้องของการทำนายข้อมูล
-for i in range(30):
+for i in range(99):
 	img = cv2.imread(path_test,cv2.COLOR_BGR2GRAY)  # แปลงรูปภาพเป็นภาพสีเทา
 	img = (Xtest[i] / (256/paraQuantize)).astype(int);  # Image Quantization
 
+	print(img.shape)
 	glcm = skf.greycomatrix(img, distances=paraDistance, angles=paraAngle, levels=paraQuantize,
 	symmetric=True, normed=True)
 
@@ -113,5 +121,5 @@ for i in range(len(Ytest)):
 	if Ytest[i] == check[i]:
 		win += 1
 
-print('Correct ' + str(win) + ' from 30 tests')           # แสดงจำนวนข้อมูลที่ทำนายถูก จากจำนวนข้อมูลที่ใช้ test 30 ตัว
+print('Correct ' + str(win) + ' from 99 tests')           # แสดงจำนวนข้อมูลที่ทำนายถูก จากจำนวนข้อมูลที่ใช้ test 30 ตัว
 print('Accuracy is ' + str((win*100)/len(Ytest)) + ' %')  # แสดง Percent ความถูกต้องของการทำนาย
