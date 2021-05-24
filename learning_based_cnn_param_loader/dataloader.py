@@ -26,7 +26,7 @@ class notMNIST(Dataset):
 			for ims in os.listdir(folder_path):
 				try:
 					img_path = os.path.join(folder_path, ims)
-					Images.append(np.array(imageio.imread(img_path)))
+					Images.append(np.array(Image.open(img_path).convert('L')))
 					Y.append(int(folder.split('_')[0])) 
 				except:
 					# Some images in the dataset are damaged
